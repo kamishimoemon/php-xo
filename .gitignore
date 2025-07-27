@@ -1,0 +1,13 @@
+# Composer
+/vendor/
+
+# PHPUnit
+/phpunit.xml
+/.phpunit.result.cache
+
+# Logs and temp
+*.log
+*.tmp
+
+# Misc
+.env
