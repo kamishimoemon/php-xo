@@ -11,6 +11,11 @@
 			"XO\\": "src/"
 		}
 	},
+	"autoload-dev": {
+		"psr-4": {
+			"XO\\Tests\\": "tests/"
+		}
+	},
 	"require-dev": {
 		"phpunit/phpunit": "^12.2"
 	},
