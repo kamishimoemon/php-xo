@@ -29,7 +29,7 @@ final class SpacesCanNotBeMarkedTwiceTest extends TestCase
 
 	#[Test]
 	#[DataProvider("spacesAndMarks")]
-	public function spaceCanNotBeMarkedWithTheSameMarkTwice (Space $space, Mark $mark): void
+	public function spaceCanNotBeMarkedTwiceWithTheSameMark (Space $space, Mark $mark): void
 	{
 		$space = new SingleMarkSpace($space);
 		$space->mark($mark, $this->createStub(SpaceListener::class));
@@ -40,7 +40,7 @@ final class SpacesCanNotBeMarkedTwiceTest extends TestCase
 
 	#[Test]
 	#[DataProvider("spacesAndMarks")]
-	public function spaceCanNotBeMarkedWithOppositeMarksTwice (Space $space, Mark $mark): void
+	public function spaceCanNotBeMarkedTwiceWithOppositeMarks (Space $space, Mark $mark): void
 	{
 		$space = new SingleMarkSpace($space);
 		$space->mark($mark, $this->createStub(SpaceListener::class));
