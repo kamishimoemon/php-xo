@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace XO\Tests\Feature;
 
+use XO\Mark;
 use XO\Space;
 use XO\SpaceListener;
-use XO\Mark;
 
 trait SpaceNotifiesWhenMarked
 {
