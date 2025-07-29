@@ -22,16 +22,16 @@
 	"scripts": {
 		"test": "phpunit"
 	},
-	"authors": [
-	{
+	"bin": [
+		"bin/cli.php"
+	],
+	"authors": [{
 		"name": "Darío Candotti",
 		"role": "Creator, Architect of Fire"
-	},
-	{
+	},{
 		"name": "Astra",
 		"role": "Guardian of Code, Assistant AI"
-	}
-	],
+	}],
 	"minimum-stability": "stable",
 	"prefer-stable": true
 }
