@@ -15,4 +15,4 @@ $input = new ConsoleInput();
 $output = new ConsoleOutput();
 $playerOne = new HumanPlayer($input);
 $playerTwo = new AIPlayer();
-(new ClassicGame($playerOne, $playerTwo))->play($input, $output);
+(new ClassicGame($playerOne, $playerTwo, $output))->play();
