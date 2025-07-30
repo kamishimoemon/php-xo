@@ -23,7 +23,7 @@
 		"test": "phpunit"
 	},
 	"bin": [
-		"bin/cli.php"
+		"bin/classic.php"
 	],
 	"authors": [{
 		"name": "Darío Candotti",
