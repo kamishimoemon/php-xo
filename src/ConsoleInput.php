@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace XO;
 
-interface Game
+class ConsoleInput
 {
-	function play (): void;
+
 }
