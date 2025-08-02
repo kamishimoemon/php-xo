@@ -8,16 +8,17 @@ class ClassicGame
 {
 	private HumanPlayer $playerOne;
 	private AIPlayer $playerTwo;
-	private ConsoleOutput $output;
+	private Grid $grid;
 
-	public function __construct (HumanPlayer $playerOne, AIPlayer $playerTwo, ConsoleOutput $output)
+	public function __construct (HumanPlayer $playerOne, AIPlayer $playerTwo)
 	{
 		$this->playerOne = $playerOne;
 		$this->playerTwo = $playerTwo;
-		$this->output = $output;
+		$this->grid = new Grid();
 	}
 
 	public function play (): void
 	{
+		$this->grid->render();
 	}
 }
