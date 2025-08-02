@@ -14,14 +14,14 @@ final class InMemorySpace implements Space
 		$listener->spaceMarked($this, $mark);
 	}
 
-	public function render (): void
+	public function render (Position $pos): void
 	{
 		echo ' ';
 		if ($this->mark !== null) {
 			$this->mark->render();
 		}
 		else {
-			echo ' ';
+			$pos->render();
 		}
 		echo ' ';
 	}

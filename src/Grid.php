@@ -10,44 +10,44 @@ class Grid
 
 	public function __construct ()
 	{
-		$this->spaces[1] = new InMemorySpace();
-		$this->spaces[2] = new InMemorySpace();
-		$this->spaces[3] = new InMemorySpace();
-		$this->spaces[4] = new InMemorySpace();
-		$this->spaces[5] = new InMemorySpace();
-		$this->spaces[6] = new InMemorySpace();
-		$this->spaces[7] = new InMemorySpace();
-		$this->spaces[8] = new InMemorySpace();
-		$this->spaces[9] = new InMemorySpace();
+		$this->spaces[Position::ONE->value] = new InMemorySpace();
+		$this->spaces[Position::TWO->value] = new InMemorySpace();
+		$this->spaces[Position::THREE->value] = new InMemorySpace();
+		$this->spaces[Position::FOUR->value] = new InMemorySpace();
+		$this->spaces[Position::FIVE->value] = new InMemorySpace();
+		$this->spaces[Position::SIX->value] = new InMemorySpace();
+		$this->spaces[Position::SEVEN->value] = new InMemorySpace();
+		$this->spaces[Position::EIGHT->value] = new InMemorySpace();
+		$this->spaces[Position::NINE->value] = new InMemorySpace();
 	}
 
 	public function render (): void
 	{
-		$this->spaces[1]->render();
+		$this->spaces[Position::ONE->value]->render(Position::ONE);
 		echo '|';
-		$this->spaces[2]->render();
+		$this->spaces[Position::TWO->value]->render(Position::TWO);
 		echo '|';
-		$this->spaces[3]->render();
+		$this->spaces[Position::THREE->value]->render(Position::THREE);
 		echo PHP_EOL;
 
 		echo '-----------';
 		echo PHP_EOL;
 
-		$this->spaces[4]->render();
+		$this->spaces[Position::FOUR->value]->render(Position::FOUR);
 		echo '|';
-		$this->spaces[5]->render();
+		$this->spaces[Position::FIVE->value]->render(Position::FIVE);
 		echo '|';
-		$this->spaces[6]->render();
+		$this->spaces[Position::SIX->value]->render(Position::SIX);
 		echo PHP_EOL;
 
 		echo '-----------';
 		echo PHP_EOL;
 
-		$this->spaces[7]->render();
+		$this->spaces[Position::SEVEN->value]->render(Position::SEVEN);
 		echo '|';
-		$this->spaces[8]->render();
+		$this->spaces[Position::EIGHT->value]->render(Position::EIGHT);
 		echo '|';
-		$this->spaces[9]->render();
+		$this->spaces[Position::NINE->value]->render(Position::NINE);
 		echo PHP_EOL;
 	}
 }

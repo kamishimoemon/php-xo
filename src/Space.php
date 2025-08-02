@@ -7,5 +7,6 @@ namespace XO;
 interface Space
 {
 	function mark (Mark $mark, SpaceListener $listener): void;
+	function render (Position $pos): void;
 }
 
