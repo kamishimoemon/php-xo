@@ -4,16 +4,8 @@ declare(strict_types=1);
 
 namespace XO;
 
-enum Mark
+interface Mark
 {
-	case X;
-	case O;
-
-	public function opposite (): Mark
-	{
-		return match ($this) {
-			self::X => Mark::O,
-			self::O => Mark::X,
-		};
-	}
+	function opposite (): Mark;
+	function render (Position $pos): void;
 }

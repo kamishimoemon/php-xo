@@ -18,7 +18,7 @@ final class InMemorySpace implements Space
 	{
 		echo ' ';
 		if ($this->mark !== null) {
-			$this->mark->render();
+			$this->mark->render($pos);
 		}
 		else {
 			$pos->render();
