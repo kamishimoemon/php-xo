@@ -20,5 +20,13 @@ class ClassicGame
 	public function play (): void
 	{
 		$this->grid->render();
+		$this->playTurn($this->playerOne);
+	}
+
+	private function playTurn (Player $player): void
+	{
+		$player->move($this->grid);
+		$this->grid->render();
+		$this->playTurn($player === $this->playerOne ? $this->playerTwo : $this->playerOne);
 	}
 }

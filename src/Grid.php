@@ -21,6 +21,11 @@ class Grid
 		$this->spaces[Position::NINE->value] = new InMemorySpace();
 	}
 
+	public function mark (Position $pos, Mark $mark): void
+	{
+		$this->spaces[$pos->value]->mark($mark);
+	}
+
 	public function render (): void
 	{
 		$this->spaces[Position::ONE->value]->render(Position::ONE);

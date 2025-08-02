@@ -9,8 +9,9 @@ use XO\ConsoleInput;
 use XO\HumanPlayer;
 use XO\AIPlayer;
 use XO\ClassicGame;
+use XO\XO;
 
 $input = new ConsoleInput();
-$playerOne = new HumanPlayer($input);
-$playerTwo = new AIPlayer();
+$playerOne = new HumanPlayer(XO::X, $input);
+$playerTwo = new AIPlayer(XO::O);
 (new ClassicGame($playerOne, $playerTwo))->play();

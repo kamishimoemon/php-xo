@@ -8,10 +8,9 @@ final class InMemorySpace implements Space
 {
 	private ?Mark $mark = null;
 
-	public function mark (Mark $mark, SpaceListener $listener): void
+	public function mark (Mark $mark): void
 	{
 		$this->mark = $mark;
-		$listener->spaceMarked($this, $mark);
 	}
 
 	public function render (Position $pos): void
